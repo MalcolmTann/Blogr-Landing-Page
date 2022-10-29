@@ -1,0 +1,229 @@
+p {
+  font-family: "Ubuntu";
+  font-weight: 300;
+  color: #4b5862;
+  line-height: 1.9;
+}
+
+h2, h3 {
+  color: #1f3f5b;
+}
+
+h3 {
+  font-size: 1.8rem;
+  font-family: "overpass";
+  font-weight: 600;
+}
+
+li {
+  font-family: "Ubuntu";
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-image: url(../../images/bg-pattern-intro-mobile.svg), linear-gradient(140deg, #ff8f70, #ff3d54);
+  background-position: 35% 32%;
+  background-size: 365%, 100%;
+  border-bottom-left-radius: 100px;
+  height: 650px;
+  width: 100%;
+  padding: 4rem 1.5rem;
+  color: #fff;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+nav {
+  background-color: #fff;
+  position: absolute;
+  top: 4.5em;
+  left: 0;
+  width: 100%;
+  padding: 2em;
+  border-radius: 5px;
+}
+
+.gn-items {
+  color: #1f3f5b;
+  text-align: center;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  font-size: 1.2rem;
+}
+.gn-items .dd-items {
+  background-color: #eaeaea;
+  border-radius: 5px;
+  margin-top: 1em;
+  padding: 1em 0;
+}
+.gn-items .dd-items li {
+  color: #1f3f5b;
+  padding: 0.5em 0;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.intro {
+  margin-top: 7.5rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem;
+}
+.intro h1 {
+  font-weight: 600;
+  font-family: "overpass";
+  font-size: 2.2rem;
+  line-height: 1.3;
+}
+.intro h1 span {
+  display: block;
+}
+.intro p {
+  color: #fff;
+  font-size: 1.11rem;
+  line-height: 1.4;
+}
+.intro .btn-g {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2.5rem;
+  justify-content: center;
+}
+.intro .btn-g button {
+  border: none;
+  border-radius: 20px;
+  padding: 0.8rem 1.3rem;
+  font-family: "Ubuntu";
+  font-weight: 500;
+}
+.intro .btn-g .fill {
+  background-color: #fff;
+  color: #ff525d;
+}
+.intro .btn-g .outline {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.design {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 6em;
+  margin-bottom: 18em;
+  padding: 0 1.5rem;
+  gap: 3em;
+  text-align: center;
+}
+.design h2 {
+  font-size: 1.7rem;
+  font-family: "overpass";
+  font-weight: 600;
+}
+.design .col {
+  width: 90%;
+  gap: 1rem;
+}
+.design .col h3 {
+  line-height: 1.2;
+}
+
+.state {
+  position: relative;
+  background-image: url(../../images/bg-pattern-circles.svg), linear-gradient(rgb(44, 45, 63) 35%, rgb(63, 65, 100) 100%);
+  background-size: 160%;
+  background-repeat: no-repeat;
+  background-position: 50% -465%;
+  border-bottom-left-radius: 100px;
+  border-top-right-radius: 100px;
+  width: 100%;
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.state img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: -11em;
+  right: 0;
+}
+.state .col {
+  margin-top: 8em;
+  gap: 1.5em;
+  width: 80%;
+}
+.state .col h2 {
+  font-size: 2.2rem;
+  font-family: "overpass";
+  font-weight: 600;
+  line-height: 1.2;
+  color: #fff;
+}
+.state .col p {
+  color: #fff;
+}
+
+.additional {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 4em;
+  gap: 3em;
+  text-align: center;
+}
+.additional .col {
+  gap: 1.5em;
+  width: 82%;
+}
+
+footer {
+  background-color: #25252d;
+  border-top-right-radius: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  margin-top: 5em;
+  padding: 5em 0;
+  text-align: center;
+}
+footer img {
+  margin-bottom: 2em;
+}
+footer .col {
+  margin-top: 3em;
+  gap: 1.5em;
+}
+footer .col h4 {
+  font-family: "Overpass";
+  font-size: 1.2rem;
+}
+footer .col ul li {
+  padding: 0.5em 0;
+  color: #c8c8cb;
+}/*# sourceMappingURL=main.css.map */
