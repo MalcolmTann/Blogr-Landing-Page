@@ -15,18 +15,32 @@ h3 {
     font-weight: 600;
 }
 
-li {
-    font-family: 'Ubuntu';
-    cursor: pointer;
-}
-
 a {
     text-decoration: none;
+}
+
+li {
+    color: #1f3f5b;
+    cursor: pointer;
+    font-family: 'Ubuntu';
 }
 
 .col {
     display: flex;
     flex-direction: column;
+}
+
+hr {
+    width: 100%;
+    margin: -0.4em 0;
+}
+
+button {
+    border: none;
+    border-radius: 20px;
+    padding: 0.8rem 1.3rem;
+    font-family: 'Ubuntu';
+    font-weight: 500;
 }
 
 .theme-wrapper {
@@ -59,25 +73,42 @@ nav {
     width: 100%;
     padding: 2em;
     border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .gn-items {
-    color: #1f3f5b;
     text-align: center;
     font-weight: 500;
     display: flex;
     flex-direction: column;
-    gap: 2em;
-    font-size: 1.2rem;
+    gap: 2rem;
+    font-size: 1.15rem;
+    img {
+        padding-left: 0.3em;
+    }
     .dd-items {
         background-color: #eaeaea;
         border-radius: 5px;
         margin-top: 1em;
         padding: 1em 0;
+        display: none;
         li {
-            color: #1f3f5b;
             padding: 0.5em 0;
             font-weight: 300;
+            font-size: 1rem;
+        }
+    }
+    .account {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5em;
+        button {
+            color: #fff;
+            background: linear-gradient(90deg, #ff8f70, #ff3d54);
+            border-radius: 50px;
+            padding: 0.9rem 2.4rem;
             font-size: 1rem;
         }
     }
@@ -108,13 +139,6 @@ nav {
         gap: 1rem;
         margin-top: 2.5rem;
         justify-content: center;
-        button {
-            border: none;
-            border-radius: 20px;
-            padding: 0.8rem 1.3rem;
-            font-family: 'Ubuntu';
-            font-weight: 500;
-        }
         .fill {
             background-color: #fff;
             color: #ff525d;
