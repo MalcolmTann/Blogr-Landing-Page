@@ -82,7 +82,8 @@ nav {
   font-weight: 500;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 2em;
+  align-items: center;
   font-size: 1.15rem;
 }
 .gn-items img {
@@ -255,6 +256,55 @@ footer .col h4 {
 footer .col ul li {
   padding: 0.5em 0;
   color: #c8c8cb;
+}
+
+@media screen and (min-width: 992px) {
+  header {
+    padding: 2em 4em;
+  }
+  .nav-container #menu-toggle {
+    display: none;
+  }
+  nav {
+    position: static;
+    display: block;
+    background-color: transparent;
+    box-shadow: none;
+  }
+  hr {
+    display: none;
+  }
+  .gn-items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 2em;
+    font-size: 1rem;
+  }
+  .gn-items li {
+    color: #fff;
+    font-weight: 300;
+  }
+  .gn-items .account {
+    flex-direction: row;
+    margin-left: auto;
+  }
+  .gn-items .account button {
+    background: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ff3d54;
+    padding: 0.8em 2.2em;
+  }
+  .intro {
+    margin-top: 6em;
+  }
+  .intro h1 {
+    font-size: 3rem;
+  }
+  .intro h1 span {
+    display: inline;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

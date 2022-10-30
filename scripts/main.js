@@ -19,3 +19,21 @@ menuToggle.addEventListener("click", () => {
     }
 });
 
+
+
+// toggle desktop images
+let colorArrow = document.querySelectorAll('.arrow');
+let editor = document.getElementById('editor');
+
+
+colorArrow.forEach(function (colorArrow) {
+    
+    if(window.innerWidth >= 992) {
+        colorArrow.src = '../images/icon-arrow-light.svg'
+
+        editor.src = '../images/illustration-editor-desktop.svg'
+    }
+    else {
+        colorArrow.src ='../images/icon-arrow-dark.svg'
+    }
+});
