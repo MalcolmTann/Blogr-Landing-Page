@@ -66,14 +66,15 @@ header {
 }
 
 nav {
-    background-color: #fff;
     position: absolute;
     top: 4.5em;
     left: 0;
     width: 100%;
+    background-color: #fff;
     padding: 2em;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: none;
 }
 
 .gn-items {
