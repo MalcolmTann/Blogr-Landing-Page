@@ -22,18 +22,25 @@ menuToggle.addEventListener("click", () => {
 
 
 // toggle desktop images
-let colorArrow = document.querySelectorAll('.arrow');
-let editor = document.getElementById('editor');
+let lightArrow = document.querySelectorAll('.arrow');
+let editorDesktop = document.getElementById('editor');
+let laptopDesktop = document.getElementById('laptop');
 
+function showDesktopImages() {
 
-colorArrow.forEach(function (colorArrow) {
-    
-    if(window.innerWidth >= 992) {
-        colorArrow.src = '../images/icon-arrow-light.svg'
+    lightArrow.forEach(function (lightArrow) {
 
-        editor.src = '../images/illustration-editor-desktop.svg'
-    }
-    else {
-        colorArrow.src ='../images/icon-arrow-dark.svg'
-    }
-});
+        if(window.innerWidth >= 992) {
+            lightArrow.src = '../images/icon-arrow-light.svg'
+            editorDesktop.src = '../images/illustration-editor-desktop.svg'
+            laptopDesktop.src = '../images/illustration-laptop-desktop.svg'
+        }
+        else {
+            lightArrow.src = '../images/icon-arrow-dark.svg'
+            editorDesktop.src = '../images/illustration-editor-mobile.svg'
+            laptopDesktop.src = '../images/illustration-laptop-mobile.svg'
+        }
+    });
+}
+showDesktopImages();
+window.addEventListener('resize', showDesktopImages);

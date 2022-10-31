@@ -5,6 +5,11 @@ p {
   line-height: 1.9;
 }
 
+h1 {
+  font-weight: 600;
+  font-family: "overpass";
+}
+
 h2, h3 {
   color: #1f3f5b;
 }
@@ -124,8 +129,6 @@ nav {
   gap: 1rem;
 }
 .intro h1 {
-  font-weight: 600;
-  font-family: "overpass";
   font-size: 2.2rem;
   line-height: 1.3;
 }
@@ -258,9 +261,44 @@ footer .col ul li {
   color: #c8c8cb;
 }
 
+@media screen and (min-width: 768px) {
+  header {
+    background-size: 240%, 100%;
+    background-position: 33% 40%;
+  }
+  .intro {
+    margin-top: 9em;
+  }
+  .intro h1 {
+    font-size: 2.5rem;
+  }
+  .intro h1 span {
+    display: inline;
+  }
+  .design {
+    margin-bottom: 23em;
+  }
+  .design h2 {
+    font-size: 2.5em;
+  }
+  .state {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 155%;
+    border-bottom-left-radius: 100px;
+    border-top-right-radius: 100px;
+    height: 550px;
+  }
+  .state img {
+    width: 65%;
+    right: 9em;
+    top: -16em;
+  }
+}
 @media screen and (min-width: 992px) {
   header {
-    padding: 2em 4em;
+    background-image: url(../../images/bg-pattern-intro-desktop.svg), linear-gradient(140deg, #ff8f70, #ff3d54);
+    padding: 2em 3em;
   }
   .nav-container #menu-toggle {
     display: none;
@@ -280,6 +318,7 @@ footer .col ul li {
     align-items: center;
     margin-left: 2em;
     font-size: 1rem;
+    color: #fff;
   }
   .gn-items li {
     color: #fff;
@@ -297,13 +336,27 @@ footer .col ul li {
     padding: 0.8em 2.2em;
   }
   .intro {
-    margin-top: 6em;
+    margin-top: 7em;
   }
-  .intro h1 {
-    font-size: 3rem;
+  .design {
+    position: relative;
+    height: 700px;
   }
-  .intro h1 span {
-    display: inline;
+  .design h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5em;
+  }
+  .design img {
+    position: absolute;
+    top: 9em;
+    left: 36em;
+    height: 80%;
+  }
+  .design .col {
+    width: 50%;
+    margin-right: auto;
+    text-align: left;
+    padding-left: 3em;
   }
 }
 
