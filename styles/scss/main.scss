@@ -363,6 +363,7 @@ footer {
 
     .dropdown {
         max-width: 8em;
+        height: 50px;
         position: relative;
         transition: .3s ease-in;
         img {
@@ -554,11 +555,10 @@ footer {
         background-image: url(../../images/bg-pattern-intro-desktop.svg), linear-gradient(90deg, #ff8f70, #ff3d54);
         background-position: 26% 51.5%;
         background-size: 220%, 100%;
-        padding: 4rem 9rem;
+        padding: 2rem 9rem;
     }
 
     .intro {
-        margin-top: 6em;
         h1 {
             font-size: 3.8rem;
         }
