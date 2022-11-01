@@ -1,46 +1,55 @@
 
-let menuToggle = document.getElementById('menu-toggle');
+// mobile nav
+let burger = document.getElementById('burger-toggle');
 let navContainer = document.querySelector('.nav-container');
 let dropDown = document.querySelectorAll('.dropdown');
 
-menuToggle.addEventListener("click", () => {
+// Toggle desktop content
+let lightArrow = document.querySelectorAll('.arrow-light-js');
+let desktopNav = document.querySelector('.header-expand-js');
+let editorDesktop = document.getElementById('editor-desktop-js');
+let laptopDesktop = document.getElementById('laptop-desktop-js');
+
+// Toggle menu
+burger.addEventListener("click", () => {
     navContainer.classList.toggle('active')
 
     if(navContainer.classList.contains('active')) {
 
-        menuToggle.src = '../images/icon-close.svg'
+        burger.src = '../images/icon-close.svg'
         document.querySelector('nav').style.display = "block";
     }
     else {
 
-        menuToggle.src = '../images/icon-hamburger.svg'
-        document.querySelector('nav').style.display = "none"
+        burger.src = '../images/icon-hamburger.svg'
+        document.querySelector('nav').style.display = "none";
 
     }
 });
 
+// Show/Hide content on window resize
+function showDesktopContent() {
 
+    if(matchMedia('(min-width: 992px)').matches) {
 
-// toggle desktop images
-let lightArrow = document.querySelectorAll('.arrow');
-let editorDesktop = document.getElementById('editor');
-let laptopDesktop = document.getElementById('laptop');
+        desktopNav.style.display = 'block';
+        editorDesktop.src = '../images/illustration-editor-desktop.svg'
+        laptopDesktop.src = '../images/illustration-laptop-desktop.svg'
+    }
+    else {
+        desktopNav.style.display = 'none';
+        burger.src = '../images/icon-hamburger.svg'
+        editorDesktop.src = '../images/illustration-editor-mobile.svg'
+        laptopDesktop.src = '../images/illustration-laptop-mobile.svg'
+    }
+}
 
-function showDesktopImages() {
+function showDesktopContentV2(){
+    showDesktopContent();
 
-    lightArrow.forEach(function (lightArrow) {
-
-        if(window.innerWidth >= 992) {
-            lightArrow.src = '../images/icon-arrow-light.svg'
-            editorDesktop.src = '../images/illustration-editor-desktop.svg'
-            laptopDesktop.src = '../images/illustration-laptop-desktop.svg'
-        }
-        else {
-            lightArrow.src = '../images/icon-arrow-dark.svg'
-            editorDesktop.src = '../images/illustration-editor-mobile.svg'
-            laptopDesktop.src = '../images/illustration-laptop-mobile.svg'
-        }
+    matchMedia('(min-width: 992px)').addEventListener('change', () => {
+        showDesktopContent();
     });
 }
-showDesktopImages();
-window.addEventListener('resize', showDesktopImages);
+
+showDesktopContentV2();

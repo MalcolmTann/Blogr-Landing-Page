@@ -111,8 +111,9 @@ nav {
   align-items: center;
   justify-content: center;
 }
-.dropdown img {
-  padding-left: 0.3em;
+.dropdown svg {
+  stroke: #FF7B86;
+  margin-left: 0.3em;
 }
 .dropdown .dd-items {
   background-color: #eaeaea;
@@ -308,7 +309,7 @@ footer .col ul li {
     background-image: url(../../images/bg-pattern-intro-desktop.svg), linear-gradient(140deg, #ff8f70, #ff3d54);
     padding: 2em 3em;
   }
-  .nav-container #menu-toggle {
+  .nav-container #burger-toggle {
     display: none;
   }
   nav {
@@ -316,7 +317,7 @@ footer .col ul li {
     display: block;
     background-color: transparent;
     box-shadow: none;
-    margin-left: 1em;
+    margin-left: 0.5em;
   }
   hr {
     display: none;
@@ -349,19 +350,20 @@ footer .col ul li {
     position: relative;
     transition: 0.3s ease-in;
   }
-  .dropdown img {
+  .dropdown svg {
+    stroke: #fff;
     transition: 0.3s ease-in;
   }
   .dropdown:hover {
     text-decoration: underline;
   }
-  .dropdown:hover img {
+  .dropdown:hover svg {
     transform: rotateX(180deg);
   }
   .dropdown:hover .dd-items {
     width: 100%;
     position: absolute;
-    top: 1.5em;
+    top: 2em;
     left: 1em;
     background-color: #ffffff;
     border-radius: 5px;
