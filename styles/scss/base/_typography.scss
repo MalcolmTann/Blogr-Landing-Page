@@ -1,0 +1,34 @@
+@use '../utilities' as *;
+
+p {
+    font-family: $textFont;
+    font-weight: $light;
+    color: $darkText;
+    line-height: 1.9;
+}
+
+h1 {
+    @include headingFont;
+}
+
+
+h2 {
+    color: $headings;
+    @include headingFont;
+}
+
+h3 {
+    font-size: 1.8rem;
+    color: $headings;
+    @include headingFont;
+}
+
+h4 {
+    font-family: $headingFont;
+}
+
+li {
+    color: $headings;
+    cursor: pointer;
+    font-family: $textFont;
+}

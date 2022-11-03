@@ -1,31 +1,32 @@
 
 // mobile nav
-let burger = document.getElementById('burger-toggle');
-let navContainer = document.querySelector('.nav-container');
-let dropDown = document.querySelectorAll('.dropdown');
+const burger = document.getElementById('burger-toggle');
+const navContainer = document.querySelector('.nav-container');
 
 // Toggle desktop content
-let lightArrow = document.querySelectorAll('.arrow-light-js');
-let desktopNav = document.querySelector('.header-expand-js');
-let editorDesktop = document.getElementById('editor-desktop-js');
-let laptopDesktop = document.getElementById('laptop-desktop-js');
+const lightArrow = document.querySelectorAll('.arrow-light-js');
+const desktopNav = document.querySelector('.header-expand-js');
+const editorDesktop = document.getElementById('editor-desktop-js');
+const laptopDesktop = document.getElementById('laptop-desktop-js');
 
 // Toggle menu
-burger.addEventListener("click", () => {
+burger.addEventListener('click', () => {
     navContainer.classList.toggle('active')
 
     if(navContainer.classList.contains('active')) {
 
         burger.src = '../images/icon-close.svg'
-        document.querySelector('nav').style.display = "block";
+        document.querySelector('nav').style.display = 'block';
     }
     else {
 
         burger.src = '../images/icon-hamburger.svg'
-        document.querySelector('nav').style.display = "none";
-
+        document.querySelector('nav').style.display = 'none';
     }
 });
+
+// TODO: mobile menu dropDown
+
 
 // Show/Hide content on window resize
 function showDesktopContent() {

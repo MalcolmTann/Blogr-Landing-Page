@@ -1,0 +1,27 @@
+@use '../utilities' as *;
+@use '../components' as *;
+
+footer {
+    background-color: $footerBg;
+    border-top-right-radius: 100px;
+    @include flex;
+    flex-direction: column;
+    color: $lightText;
+    margin-top: 5em;
+    padding: 5em 0;
+    text-align: center;
+    img {
+        margin-bottom: 2em;
+    }
+    .col {
+        h4 {
+            font-size: 1.2rem;
+        }
+        margin-top: 3em;
+        gap: 1.5em;
+        ul li {
+            padding: 0.5em 0;
+            color: #c8c8cb;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+@use '../utilities' as *;
+@use '../components' as *;
+
+.additional {
+    @include flex;
+    flex-direction: column;
+    margin-top: 4em;
+    gap: 3em;
+    text-align: center;
+    .col {
+        gap: 1.5em;
+        width: 82%;
+    }
+}

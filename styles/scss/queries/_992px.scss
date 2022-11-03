@@ -1,19 +1,176 @@
+@use '../utilities' as *;
+@use '../components' as *;
+
 @media screen and (min-width: 992px) {
 
+    header {
+        background-image: url(../../images/bg-pattern-intro-desktop.svg), $introBg;
+        padding: 2em 3em;
+    }
+
     .nav-container {
-        #menu-toggle {
+        #burger-toggle {
             display: none;
         }
     }
 
     nav {
         position: static;
+        background-color: transparent;
+        box-shadow: none;
         display: block;
+        margin-left: 0.5em;
+    }
+
+    hr {
+        display: none;
     }
 
     .gn-items {
-        display: block;
+        flex-direction: row;
+        align-items: center;
+        gap: 0;
+        li {
+            color: $lightText;
+            font-size: 1rem;
+            font-weight: 300;
+            @include transition;
+        }
+        .account {
+            flex-direction: row;
+            margin-left: auto;
+            button {
+                background: #fff;
+                font-size: 1rem;
+                color: #ff3d54;
+                padding: 0.8em 2.2em;
+                @include transition;
+                &:hover {
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    .dropdown {
+        max-width: 8em;
+        height: 50px;
+        @include flex;
+        position: relative;
+        @include transition;
+        svg {
+            stroke: #fff;
+            @include transition;
+        }
+        &:hover {
+                text-decoration: underline;
+            svg {
+                transform: rotateX(180deg);
+            }
+            .dd-items {
+                width: 100%;
+                position: absolute;
+                top: 2em;
+                left: 1em;
+                background-color: #fff;
+                border-radius: 5px;
+                margin-top: 1em;
+                padding: 1em 0;
+                display: block;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                li {
+                    text-align: left;
+                    font-size: 0.8rem;
+                    padding: 0.5em 1em;
+                    color: $darkText;
+                    transition: .3s ease-in;
+                    &:hover {
+                        color: #000;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
     }
 
 
+    .intro {
+        margin-top: 7em;
+    }
+
+    .design {
+        position: relative;
+        height: 700px;
+        margin-bottom: 12em;
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5em;
+        }
+        img {
+            position: absolute;
+            top: 9em;
+            left: 60%;
+            height: 80%;
+        }
+        .col {
+            width: 50%;
+            margin-right: auto;
+            text-align: left;
+            padding-left: 3em;
+        }
+    }
+
+    .state {
+        height: 380px;
+        background-size: 100%;
+        background-position: 100% 50%;
+    }
+
+    .content-wrapper {
+        img {
+            left: 0;
+            top: -19%;
+            width: 30em;
+        }
+        .col {
+            width: 50%;
+            text-align: left;
+            margin-left: auto;
+            padding-right: 3em;
+            margin-top: 0;
+        }
+    }
+
+    .additional {
+        position: relative;
+        margin: 8em 0;
+        height: 700px;
+        img {
+            position: absolute;
+            top: 10%;
+            right: 51%;
+            height: 85%;
+        }
+        .col {
+            text-align: left;
+            width: 50%;
+            margin-left: auto;
+            padding-right: 3em;
+        }
+    }
+
+    footer {
+        padding-right: 6em;
+        flex-direction: row;
+        align-items: flex-start;
+        text-align: center;
+        gap: 8em;
+        img {
+            height: 2em;
+        }
+        .col {
+            margin-top: 0.5em;
+            text-align: left;
+        }
+    }
 }

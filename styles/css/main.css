@@ -1,3 +1,7 @@
+a {
+  text-decoration: none;
+}
+
 p {
   font-family: "Ubuntu";
   font-weight: 300;
@@ -10,18 +14,21 @@ h1 {
   font-family: "overpass";
 }
 
-h2, h3 {
+h2 {
   color: #1f3f5b;
+  font-weight: 600;
+  font-family: "overpass";
 }
 
 h3 {
   font-size: 1.8rem;
-  font-family: "overpass";
+  color: #1f3f5b;
   font-weight: 600;
+  font-family: "overpass";
 }
 
-a {
-  text-decoration: none;
+h4 {
+  font-family: "overpass";
 }
 
 li {
@@ -30,36 +37,41 @@ li {
   font-family: "Ubuntu";
 }
 
-.col {
+.intro {
+  margin-top: 7.5rem;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
+  gap: 1rem;
 }
-
-hr {
-  width: 100%;
-  margin: -0.4em 0;
+.intro h1 {
+  font-size: 2.2rem;
+  line-height: 1.3;
 }
-
-button {
-  border: none;
-  border-radius: 20px;
-  padding: 0.8rem 1.3rem;
-  font-family: "Ubuntu";
-  font-weight: 500;
+.intro h1 span {
+  display: block;
 }
-
-.theme-wrapper {
-  overflow: hidden;
-}
-
-header {
-  background-image: url(../../images/bg-pattern-intro-mobile.svg), linear-gradient(140deg, #ff8f70, #ff3d54);
-  background-position: 35% 32%;
-  background-size: 365%, 100%;
-  border-bottom-left-radius: 100px;
-  height: 650px;
-  padding: 4rem 1.5rem;
+.intro p {
   color: #fff;
+  font-size: 1.11rem;
+  line-height: 1.4;
+}
+.intro .btn-g {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2.5rem;
+  justify-content: center;
+  align-items: center;
+}
+.intro .btn-g .fill {
+  background-color: #fff;
+  color: #ff525d;
+}
+.intro .btn-g .outline {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
 }
 
 .nav-container {
@@ -82,24 +94,25 @@ nav {
 }
 
 .gn-items {
-  text-align: center;
   display: flex;
-  flex-direction: column;
-  gap: 2em;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 2em;
   font-size: 1.15rem;
   font-weight: 500;
 }
 .gn-items .account {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
   gap: 1.5em;
 }
 .gn-items .account button {
   color: #fff;
-  background: linear-gradient(90deg, #ff8f70, #ff3d54);
+  background: linear-gradient(140deg, #ff8f70, #ff3d54);
   border-radius: 50px;
   padding: 0.9rem 2.4rem;
   font-size: 1rem;
@@ -107,13 +120,10 @@ nav {
 
 .dropdown {
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .dropdown svg {
   stroke: #FF7B86;
-  margin-left: 0.3em;
+  margin: 0 0 0.1em 0.3em;
 }
 .dropdown .dd-items {
   background-color: #eaeaea;
@@ -128,46 +138,33 @@ nav {
   font-size: 1rem;
 }
 
-.intro {
-  margin-top: 7.5rem;
+hr {
+  width: 100%;
+  margin: -0.4em 0;
+}
+
+button {
+  border: none;
+  border-radius: 20px;
+  padding: 0.8rem 1.3rem;
+  font-family: "Ubuntu";
+  font-weight: 500;
+}
+
+.col {
   display: flex;
   flex-direction: column;
-  text-align: center;
-  gap: 1rem;
 }
-.intro h1 {
-  font-size: 2.2rem;
-  line-height: 1.3;
-}
-.intro h1 span {
-  display: block;
-}
-.intro p {
-  color: #fff;
-  font-size: 1.11rem;
-  line-height: 1.4;
-}
-.intro .btn-g {
-  display: flex;
-  gap: 1rem;
-  margin-top: 2.5rem;
-  justify-content: center;
-}
-.intro .btn-g .fill {
-  background-color: #fff;
-  color: #ff525d;
-}
-.intro .btn-g .outline {
-  background-color: transparent;
-  color: #fff;
-  border: 1px solid #fff;
+
+.theme-wrapper {
+  overflow-x: hidden;
 }
 
 .design {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
   margin-top: 6em;
   margin-bottom: 18em;
   padding: 0 1.5rem;
@@ -176,8 +173,6 @@ nav {
 }
 .design h2 {
   font-size: 1.7rem;
-  font-family: "overpass";
-  font-weight: 600;
 }
 .design .col {
   width: 90%;
@@ -201,9 +196,9 @@ nav {
 .content-wrapper {
   position: relative;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
   text-align: center;
   height: inherit;
 }
@@ -220,8 +215,6 @@ nav {
 }
 .content-wrapper .col h2 {
   font-size: 2.2rem;
-  font-family: "overpass";
-  font-weight: 600;
   line-height: 1.2;
   color: #fff;
 }
@@ -231,8 +224,8 @@ nav {
 
 .additional {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
   margin-top: 4em;
   gap: 3em;
@@ -243,13 +236,23 @@ nav {
   width: 82%;
 }
 
+header {
+  background-image: url(../../images/bg-pattern-intro-mobile.svg), linear-gradient(140deg, #ff8f70, #ff3d54);
+  background-position: 35% 32%;
+  background-size: 365%, 100%;
+  border-bottom-left-radius: 100px;
+  height: 650px;
+  padding: 4rem 1.5rem;
+  color: #fff;
+}
+
 footer {
   background-color: #25252d;
   border-top-right-radius: 100px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
   color: #fff;
   margin-top: 5em;
   padding: 5em 0;
@@ -263,7 +266,6 @@ footer .col {
   gap: 1.5em;
 }
 footer .col h4 {
-  font-family: "Overpass";
   font-size: 1.2rem;
 }
 footer .col ul li {
@@ -314,9 +316,9 @@ footer .col ul li {
   }
   nav {
     position: static;
-    display: block;
     background-color: transparent;
     box-shadow: none;
+    display: block;
     margin-left: 0.5em;
   }
   hr {
@@ -340,13 +342,19 @@ footer .col ul li {
   .gn-items .account button {
     background: #fff;
     font-size: 1rem;
-    font-weight: 600;
     color: #ff3d54;
     padding: 0.8em 2.2em;
+    transition: 0.3s ease-in;
+  }
+  .gn-items .account button:hover {
+    color: #fff;
   }
   .dropdown {
     max-width: 8em;
     height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
     transition: 0.3s ease-in;
   }
@@ -365,7 +373,7 @@ footer .col ul li {
     position: absolute;
     top: 2em;
     left: 1em;
-    background-color: #ffffff;
+    background-color: #fff;
     border-radius: 5px;
     margin-top: 1em;
     padding: 1em 0;
@@ -377,7 +385,7 @@ footer .col ul li {
     font-size: 0.8rem;
     padding: 0.5em 1em;
     color: #4b5862;
-    transition: all 0.3s;
+    transition: 0.3s ease-in;
   }
   .dropdown:hover .dd-items li:hover {
     color: #000;
@@ -445,7 +453,6 @@ footer .col ul li {
     padding-right: 6em;
     flex-direction: row;
     align-items: flex-start;
-    justify-content: center;
     text-align: center;
     gap: 8em;
   }

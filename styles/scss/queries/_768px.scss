@@ -1,0 +1,40 @@
+@media screen and (min-width: 768px) {
+
+    header {
+        background-size: 240%, 100%;
+        background-position: 30% 45%;
+    }
+
+    .intro {
+        margin-top: 9em;
+        h1 {
+            font-size: 2.5rem;
+            span {
+                display: inline;
+            }
+        }
+    }
+
+    .design {
+        margin-bottom: 21em;
+        h2 {
+            font-size: 2.5em;
+        }
+    }
+
+    .state {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 0 155%;
+        border-bottom-left-radius: 100px;
+        border-top-right-radius: 100px;
+        height: 550px;
+    }
+
+    .content-wrapper {
+        img {
+            width: 30em;
+            top: -45%;
+        }
+    }
+}

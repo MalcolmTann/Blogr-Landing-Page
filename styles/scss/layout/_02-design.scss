@@ -1,0 +1,22 @@
+@use '../utilities' as *;
+@use '../components' as *;
+
+.design {
+    @include flex;
+    flex-direction: column;
+    margin-top: 6em;
+    margin-bottom: 18em;
+    padding: 0 1.5rem;
+    gap: 3em;
+    text-align: center;
+    h2 {
+        font-size: 1.7rem;
+    }
+    .col {
+        width: 90%;
+        gap: 1rem;
+        h3 {
+            line-height: 1.2;
+        }
+    }
+}

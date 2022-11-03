@@ -1,0 +1,11 @@
+@use '../utilities' as *;
+
+header {
+    background-image: url(../../images/bg-pattern-intro-mobile.svg), $introBg;
+    background-position: 35% 32%;
+    background-size: 365%, 100%;
+    border-bottom-left-radius: 100px;
+    height: 650px;
+    padding: 4rem 1.5rem;
+    color: $lightText;
+}

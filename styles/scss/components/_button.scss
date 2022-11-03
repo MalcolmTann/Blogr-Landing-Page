@@ -1,0 +1,9 @@
+@use '../utilities' as *;
+
+button {
+    border: none;
+    border-radius: 20px;
+    padding: 0.8rem 1.3rem;
+    font-family: $textFont;
+    font-weight: $semiBold;
+}
