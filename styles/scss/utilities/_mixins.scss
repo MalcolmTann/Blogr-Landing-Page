@@ -1,6 +1,9 @@
+@use '../utilities/colors' as *;
+@use '../utilities/fonts' as *;
+
 @mixin headingFont {
-    font-weight: 600;
-    font-family: 'overpass';
+    font-weight: $bold;
+    font-family: $headingFont;
 }
 
 @mixin flex {
@@ -10,5 +13,10 @@
 }
 
 @mixin transition {
-    transition: .3s ease-in;
+    transition: .3s ease-in-out;
+}
+
+@mixin hovers {
+    background: $btnHover;
+    color: $lightText;
 }

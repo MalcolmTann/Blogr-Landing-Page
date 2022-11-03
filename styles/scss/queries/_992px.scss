@@ -42,11 +42,11 @@
             button {
                 background: #fff;
                 font-size: 1rem;
-                color: #ff3d54;
+                color: $btn;
                 padding: 0.8em 2.2em;
                 @include transition;
                 &:hover {
-                    color: #fff;
+                    @include hovers;
                 }
             }
         }
@@ -72,7 +72,7 @@
                 position: absolute;
                 top: 2em;
                 left: 1em;
-                background-color: #fff;
+                background-color: $lightText;
                 border-radius: 5px;
                 margin-top: 1em;
                 padding: 1em 0;
@@ -83,10 +83,10 @@
                     font-size: 0.8rem;
                     padding: 0.5em 1em;
                     color: $darkText;
-                    transition: .3s ease-in;
+                    @include transition;
                     &:hover {
-                        color: #000;
-                        font-weight: 500;
+                        color: $darkText;
+                        font-weight: $semiBold;
                     }
                 }
             }
@@ -96,6 +96,21 @@
 
     .intro {
         margin-top: 7em;
+    }
+
+    .fill {
+        @include transition;
+        &:hover {
+            @include hovers;
+        }
+    }
+
+    .outline {
+        @include transition;
+        &:hover {
+            background: $lightText;
+            color: $btn;
+        }
     }
 
     .design {
@@ -163,7 +178,6 @@
         padding-right: 6em;
         flex-direction: row;
         align-items: flex-start;
-        text-align: center;
         gap: 8em;
         img {
             height: 2em;
