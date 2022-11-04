@@ -28,6 +28,7 @@ burger.addEventListener('click', () => {
 // TODO: mobile menu dropDown
 
 
+
 // Show/Hide content on window resize
 function showDesktopContent() {
 
