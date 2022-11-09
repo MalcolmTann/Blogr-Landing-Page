@@ -17,16 +17,20 @@ burger.addEventListener('click', () => {
 
         burger.src = '../images/icon-close.svg'
         document.querySelector('nav').style.display = 'block';
+
+        // Mobile Menu Dropdown
+        document.querySelectorAll('.dropdown').forEach(i => {
+
+            i.addEventListener('click', (e) => {
+                i.getElementsByTagName('ul')[0].classList.toggle('show');
+            })
+        });
     }
     else {
-
         burger.src = '../images/icon-hamburger.svg'
         document.querySelector('nav').style.display = 'none';
     }
 });
-
-// TODO: mobile menu dropDown
-
 
 
 // Show/Hide content on window resize
