@@ -23,6 +23,8 @@ Users should be able to:
 
 ### Screenshot
 
+Desktop
+![](screenshots/deskop.jpg)
 
 
 ### Links
@@ -40,49 +42,76 @@ Users should be able to:
 
 ### What I learned
 
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
+New rules and syntax to accurately customize background images.
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+header {
+    background-image: url(../../images/bg-pattern-intro-mobile.svg), $introBg;
+    background-position: 35% 32%;
+    background-size: 365%, 100%;
+    border-bottom-left-radius: 100px;
+    height: 650px;
+    padding: 4rem 1.5rem;
+    color: $lightText;
 }
 ```
+
+Using @use and @forward as well as mixins 
+```scss
+@use '../utilities/colors' as *;
+@use '../utilities/fonts' as *;
+
+@mixin headingFont {
+    font-weight: $bold;
+    font-family: $headingFont;
+}
+
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin transition {
+    transition: .3s ease-in-out;
+}
+
+@mixin hovers {
+    background: $btnHover;
+    color: $lightText;
+}
+```
+
+matchmedia and how you can set window event listeners
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+function showDesktopContent(){
+    changeContent();
+
+    matchMedia('(min-width: 992px)').addEventListener('change', () => {
+        changeContent();
+    });
 }
+showDesktopContent();
 ```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+- I want to further my learning of SASS/SCSS, diving more into its complex functionality so I can incorporate it to larger projects.
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+- JavaScript will always be one of my top priorities to learn. Being the language of the web, there is so much to know and so much to gain. I always want to be further developing my JS skills.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [SASS documentation](https://sass-lang.com/documentation/) - What better way to properly learn SASS than their actual documentation!
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [Kevin Powell](https://www.youtube.com/watch?v=CR-a8upNjJ0&ab_channel=KevinPowell) - A great resource to learn about SASS 'use' and 'forward' as 'import' is being fazed out in the near future. 
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- Website - [Malcolm Tan](https://www.malcolm-tan.com)
+- LinkedIn - [@yourusername](www.linkedin.com/in/malcolmtan-)
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+Thank you to [Airrick Dunfield](https://github.com/airrickdunfield) for helping fix bug issues
 
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+
