@@ -24,12 +24,15 @@ Users should be able to:
 ### Screenshot
 
 Desktop View
+<br>
 ![](./images/desktop-ss.jpg)
 
 Tablet View
+<br>
 ![](./images/tablet-ss.jpg)
 
 Mobile View
+<br>
 ![](./images/mobile-ss.jpg)
 
 ### Links
