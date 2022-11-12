@@ -23,8 +23,14 @@ Users should be able to:
 
 ### Screenshot
 
-Desktop
+Desktop View
 ![](./images/desktop-ss.jpg)
+
+Tablet View
+![](./images/tablet-ss.jpg)
+
+Mobile View
+![](./images/mobile-ss.jpg)
 
 ### Links
 
