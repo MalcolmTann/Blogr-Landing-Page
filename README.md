@@ -24,7 +24,7 @@ Users should be able to:
 ### Screenshot
 
 Desktop
-![](screenshots/deskop.jpg)
+![desktop](screenshots/deskop.jpg)
 
 
 ### Links
