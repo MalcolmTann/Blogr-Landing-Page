@@ -31,7 +31,7 @@ burger.addEventListener('click', () => {
     }
     // if the burger doesn't contain the class of active, keep it as default
     else {
-        burger.src = './images/icon-hamburger.svg'
+        burger.src = 'images/icon-hamburger.svg'
         document.querySelector('nav').style.display = 'none';
     }
 });
