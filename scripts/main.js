@@ -31,7 +31,7 @@ burger.addEventListener('click', () => {
     }
     // if the burger doesn't contain the class of active, keep it as default
     else {
-        burger.src = '../images/icon-hamburger.svg'
+        burger.src = './images/icon-hamburger.svg'
         document.querySelector('nav').style.display = 'none';
     }
 });
@@ -44,15 +44,15 @@ function changeContent() {
     if(matchMedia('(min-width: 992px)').matches) {
 
         desktopNav.style.display = 'block';
-        editorDesktop.src = './images/illustration-editor-desktop.svg'
-        laptopDesktop.src = './images/illustration-laptop-desktop.svg'
+        editorDesktop.src = 'images/illustration-editor-desktop.svg'
+        laptopDesktop.src = 'images/illustration-laptop-desktop.svg'
     }
     // if not 992px or <, use these assets instead
     else {
         desktopNav.style.display = 'none';
-        burger.src = './images/icon-hamburger.svg'
-        editorDesktop.src = './images/illustration-editor-mobile.svg'
-        laptopDesktop.src = './images/illustration-laptop-mobile.svg'
+        burger.src = 'images/icon-hamburger.svg'
+        editorDesktop.src = 'images/illustration-editor-mobile.svg'
+        laptopDesktop.src = 'images/illustration-laptop-mobile.svg'
     }
 }
 
