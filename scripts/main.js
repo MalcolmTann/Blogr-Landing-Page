@@ -17,7 +17,7 @@ burger.addEventListener('click', () => {
 
         // do this...
         // show the navbar and change the burger into an X
-        burger.src = '../images/icon-close.svg'
+        burger.src = './images/icon-close.svg'
         document.querySelector('nav').style.display = 'block';
 
         // Toggle the secondary menu dropdown
@@ -44,15 +44,15 @@ function changeContent() {
     if(matchMedia('(min-width: 992px)').matches) {
 
         desktopNav.style.display = 'block';
-        editorDesktop.src = '../images/illustration-editor-desktop.svg'
-        laptopDesktop.src = '../images/illustration-laptop-desktop.svg'
+        editorDesktop.src = './images/illustration-editor-desktop.svg'
+        laptopDesktop.src = './images/illustration-laptop-desktop.svg'
     }
     // if not 992px or <, use these assets instead
     else {
         desktopNav.style.display = 'none';
-        burger.src = '../images/icon-hamburger.svg'
-        editorDesktop.src = '../images/illustration-editor-mobile.svg'
-        laptopDesktop.src = '../images/illustration-laptop-mobile.svg'
+        burger.src = './images/icon-hamburger.svg'
+        editorDesktop.src = './images/illustration-editor-mobile.svg'
+        laptopDesktop.src = './images/illustration-laptop-mobile.svg'
     }
 }
 
