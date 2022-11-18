@@ -1,6 +1,7 @@
 ## Table of contents
 
 - [Overview](#overview)
+  - [Live](#live-site)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
@@ -13,6 +14,10 @@
 - [Acknowledgments](#acknowledgments)
 
 ## Overview
+
+### Live Site
+
+[Live Site](https://malcolmtann.github.io/Blogr-Landing-Page/)
 
 ### The challenge
 
@@ -34,10 +39,6 @@ Tablet View
 Mobile View
 <br>
 ![](./images/mobile-ss.jpg)
-
-### Links
-
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
 
@@ -109,14 +110,13 @@ showDesktopContent();
 
 ### Useful resources
 
-- [SASS documentation](https://sass-lang.com/documentation/) - What better way to properly learn SASS than their actual documentation!
-
 - [Kevin Powell](https://www.youtube.com/watch?v=CR-a8upNjJ0&ab_channel=KevinPowell) - A great resource to learn about SASS 'use' and 'forward' as 'import' is being fazed out in the near future. 
 
 ## Author
 
-- Website - [Malcolm Tan](https://www.malcolm-tan.com)
-- LinkedIn - [@yourusername](www.linkedin.com/in/malcolmtan-)
+- Malcolm Tan
+- [malcolm-tan.com](https://www.malcolm-tan.com)
+- [LinkedIn](www.linkedin.com/in/malcolmtan-)
 
 ## Acknowledgments
 
